@@ -8,4 +8,19 @@ and asks the user to guess the correct answer using the hints provided
 
 #include <iostream>
 #include <cstdlib>
-#include <ctime>S
+#include <ctime>
+
+int generateNumber(){
+    srand(time(0));
+
+    //Generate random number 100-999
+    int randomNumber = (rand() % 900) + 100;
+
+    return randomNumber;
+}
+
+int main(){
+
+    stdd::cout << "Random number:" << generateNumber();
+    return 0;
+}
